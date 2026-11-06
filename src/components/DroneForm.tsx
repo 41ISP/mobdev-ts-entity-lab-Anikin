@@ -1,4 +1,21 @@
-export function EntityForm() {
+import {FormEvent, useStaate} from 'react'
+import {useDroneStore} from '../store'
+import 
+{
+    DRONE_TYPES,
+    DRONE_STATUSES,
+    ABILITIES,
+    IDroneInput,
+    DroneType,
+    DroneStatus
+} from "../types"
+export function DroneForm() {
+    const addDrone = useDroneStore ((s) => s.addDrone)
+    
+    
+    
+    
+    
     return (
         <form className="form">
             <h2>Добавить сущность</h2>
